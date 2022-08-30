@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  font-family: Merriweather Sans, "sans-serif";
+}
+
+p, h1, h2, h3, h4, h5 {
+  color: #837E9F;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+h1, h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainPortfolio {
+  padding: 0 10vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  background-color: #302F3D;
+  box-shadow: 2px 2px 2px 1px #00000033;
+  border-radius: 20px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-bottom: 30px;
+}
+
+.profilePicture {
+  box-sizing: border-box;
+  width: 128px;
+  border-radius: 9999px;
+}
+
+
+
+
+
+#sideInfo {
+  flex: 1;
+
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#sideInfo #nameContainer {
+  align-items: center;
+  text-align: center;
+}
+
+#sideInfo #nameContainer img{
+  border: 2px solid #00FF00;
+  margin-bottom: 30px;
+}
+
+#sideInfo #nameContainer p{
+  font-weight: 300;
+}
+
+#sideInfo #socialLinks {
+  background-color: #302F3D;
+  padding: 30px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+#sideInfo #socialLinks i{
+  margin-right: 20px;
+  font-size: 24px;
+  color: #837E9F
+}
+
+#sideInfo #socialLinks ul{
+  list-style: none;
+  padding: 0;
+}
+
+#sideInfo #socialLinks li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#sideInfo #socialLinks li:not(:last-child){
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#sideInfo #socialLinks p{
+  display: inline-block;
+}
+
+#sideInfo #techs h3{
+  margin-left: -10px;
+}
+
+#sideInfo #techs #gridTechs{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+#sideInfo #techs #gridTechs p{
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+
+  color: #000000;
+  background-color: #CB92B1;
+  border-radius: 999px;
+  padding: 7px;
+}
+
+.list {
+  color: #837e9f;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.list .first {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.list .last {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+
+
+#mainSection {
+  flex: 3;
+  margin: 30px;
+}
+
+.sectionTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionTitle a {
+  color: #837E9F;
+  text-decoration: none;
+}
+
+#myProjectsPubs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.projectContainer {
+  display: grid;
+  grid-template-columns: 2fr 0fr;
+  grid-row-gap: 20px;
+  grid-template-rows: 0fr 1fr 0fr;
+  grid-template-areas:
+  "name name"
+  "description description" 
+  "github techs";
+}
+
+.projectContainer p{
+  display: inline-block;
+}
+
+.projectContainer img{
+  width: 20px;
+}
+
+.projectContainer .projectName {
+  grid-area: name;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.projectContainer .projectName i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.projectContainer .projectDescription {
+  grid-area: description;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  height: 46px;
+}
+
+.projectContainer .gitInformation {
+  grid-area: github;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.projectContainer .gitInformation i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.projectContainer .gitInformation .gitItem{
+  margin-right: 16px;
+}
+
+.projectContainer .projectTech {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.projectContainer .projectTech::before {
+  content: "";
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  background: #E7DE79;
+  border: 2px solid #837E9F;
+  border-radius: 999px;
+  margin-right: 8px;
+}
+
+.projectContainer .projectName, .projectContainer .gitInformation, 
+.projectContainer .gitItem, .projectContainer .projectTech {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.postText {
+  margin-left: 20px;
+}
+
+.postText h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.postText h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.postText p {
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+

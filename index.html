@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Desafio: Portfolio</title>
+
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="background-color:#22212C">
+  <main id="mainPortfolio">
+    <!-- Seção lateral esquerda sobre informações da pessoa -->
+    <div id="sideInfo">
+      <!-- Container contendo imagem, nome e função da pessoa -->
+      <div id="nameContainer" class="container">
+        <img src="https://avatars.githubusercontent.com/u/77460487?v=4" alt="Profile picture" class="profilePicture">
+        <H2>Gabriel Rousselet</H2>
+        <p>Desenvolvedor Front-End</p>
+      </div>
+      <!-- Container de informações sociais -->
+      <div id="socialLinks" class="container">
+        <ul class="socialList">
+          <li class="socialListItem">
+            <i class="bi bi-geo-alt"></i><p>Local</p>
+          </li>
+          <li class="socialItem">
+            <i class="bi bi-briefcase"></i><p>Empresa</p>
+          </li>
+          <li class="socialItem">
+            <i class="bi bi-github"></i><p>GitHub</p>
+          </li>
+          <li class="socialItem">
+            <i class="bi bi-linkedin"></i><p>Linkedin</p>
+          </li>
+          <li class="socialItem">
+            <i class="bi bi-twitter"></i><p>Twitter</p>
+          </li>
+          <li class="socialItem">
+            <i class="bi bi-globe"></i><p>Site</p>
+          </li>
+          <li class="socialItem">
+            <i class="bi bi-envelope"></i><p>E-mail</p>
+          </li>
+        </ul>
+      </div>
+      <!-- Container contendo as tecnologias do usuário -->
+      <div id="techs" class="container">
+        <h3>Tecnologias</h3>
+          <div id="gridTechs">
+            <p>JAVASCRIPT</p>
+            <p>REACTJS</p>
+            <p>NODEJS</p>
+            <p>GIT</p>
+            <p>GITHUB</p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>ELIXIR</p>
+            <p>REACT NATIVE</p>
+          </div>
+      </div>
+      <!-- Container com as experiências anteriores do usuário -->
+      <div id="experience" class="container">
+        <h3>Experiências</h3>
+        <ul class="list">
+          <li><Strong>Rocketseat</Strong><p class="first">2019 - Atualmente</p><p class="last">Community Experience</p></li>
+          <br>
+          <li><Strong>Rocketseat</Strong><p class="first">2019 - Atualmente</p><p class="last">Community Experience</p></li>
+          <br>
+          <li><Strong>Rocketseat</Strong><p class="first">2019 - Atualmente</p><p class="last">Community Experience</p></li>
+          <br>
+          <li><Strong>Rocketseat</Strong><p class="first">2019 - Atualmente</p><p class="last">Community Experience</p></li>
+        </ul>
+      </div>
+      <!-- Container com os certificados e estudos do usuário -->
+      <div id="education" class="container">
+        <h3>Educação</h3>
+        <ul class="list">
+          <li><p><Strong>Rocketseat</Strong><p class="first">2019 - 2019</p><p class="last">GoStack</p></li>
+          <br>
+          <li><p><Strong>Rocketseat</Strong><p class="first">2019 - 2020</p><p class="last">Ignite</p></li>
+          <br>
+          <li><p><Strong>Rocketseat</Strong><p class="first">2019 - 2021</p><p class="last">Ignite Pro</p></li>
+          <br>
+          <li><p><Strong>Rocketseat</Strong><p class="first">2019 - 2021</p><p class="last">Ignite Pro</p></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Seção central -->
+    <div id="mainSection">
+
+      <!-- Nesting do título e publicações de projetos, imaginando que devem fazer parte da mesma parte -->
+      <section id="myProjects">
+
+        <!-- Container do título do "myProjects" -->
+        <div id="myProjectsTitle" class="sectionTitle container">
+          <h2>My Projects</h2>
+          <a href="#">Veja todos</a>
+        </div>
+
+        <!-- Publicações de projetos -->
+        <section id="myProjectsPubs">
+
+          <div class="projectContainer container">
+            <p class="projectName"><i class="bi bi-folder"></i> my-onyx</p>
+            <p class="projectDescription">Consulte os códigos de erro que aparecem no painel do veículo Onix.</p>
+            <section class="gitInformation">
+              <p class="gitItem"><i class="bi bi-star"></i> 100</p>
+              <p class="gitItem"><i class="bi bi-alt"></i>100</p>
+            </section>
+            <p class="projectTech">JavaScript</p>
+          </div>
+
+          <div class="projectContainer container">
+            <p class="projectName"><i class="bi bi-folder"></i> Segundo projeto</p>
+            <p class="projectDescription">Consulte os códigos de erro que aparecem no painel do veículo Onix.</p>
+            <section class="gitInformation">
+              <p class="gitItem"><i class="bi bi-star"></i> 100</p>
+              <p class="gitItem"><i class="bi bi-alt"></i>100</p>
+            </section>
+            <p class="projectTech">JavaScript</p>
+          </div>
+
+        </section>
+
+
+      </section>
+
+      <!-- Nesting do título e publicações de projetos, imaginando que devem fazer parte da mesma parte -->
+      <section id="postsSection">
+
+        <!-- Container do título do "posts" -->
+        <div id="postsTitle" class="sectionTitle container">
+          <h2>Recent Posts</h2>
+        </div>
+
+        <!-- Seção que irá manter os "posts" -->
+        <section id="postsArea">
+          <div class="post container">
+            <img src="https://avatars.githubusercontent.com/u/77460487?v=4" alt="Profile Image" class="profilePicture">
+            <section class="postText">
+              <h4>Erro adb devices no Genymotion e Android Studio (React Native)</h4>
+              <p>2 anos atrás</p>
+              <br><br>
+              <h5>Erro adb devices no Genymotion e Android Studio (React Native)</h5>
+              <p class="hash">#react-native</p>
+              <p class="hash">#genimotion</p>
+              <p class="hash">#genimotion</p>
+              <p class="hash">#genimotion</p>
+            </section>
+          </div>
+        </section>
+
+      </section>
+
+      
+    </div>
+
+  </main>
+
+  <p style="margin: 20px 0;">Feito com 💜 por birobirobiro</p>
+</body>
+
+</html>
